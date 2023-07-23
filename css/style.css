@@ -1,0 +1,75 @@
+#nav{
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color:#333;
+
+}
+#nav .container{
+    width:1140px;
+    margin: 0 auto;
+}
+#nav .container .main_menu{
+    display: flex;
+    gap:50px;
+    align-items: center;
+}
+#nav .container .main_menu ul{
+    display: flex;
+    list-style: none;
+    gap:20px;
+    padding-left:0;
+}
+#nav .container .main_menu ul li{
+    padding:0 10px;
+    width:max-content;
+
+}
+#nav .container .main_menu ul li a:hover{
+    color:red;
+}
+#nav .container .main_menu ul li{
+    position: relative;
+}
+#nav .container .main_menu ul li ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:100%;
+    left:0;
+    gap:0;
+    visibility: hidden;
+    opacity: 0;
+    background: green;
+}
+#nav .container .main_menu ul li ul li{
+    padding: 10px 10px;
+}
+#nav .container .main_menu ul li ul li:hover{
+    background: yellow;
+}
+#nav .container .main_menu ul li ul li a:hover{
+    color:red;
+}
+#nav .container .main_menu ul li:hover>ul{
+ visibility: visible;
+ opacity: 1;
+}
+#nav .container .main_menu ul li ul li ul{
+    position: absolute;
+    top:0;
+    left:100%;
+    padding-top: 0;
+    background: #333;
+}
+#nav .container .main_menu ul li ul li ul li{
+    padding:10px 10px;
+    
+}
+#nav .container .main_menu ul li ul li ul li a{
+    color:#fff;
+}
+#nav .container .main_menu ul li ul li ul li:hover a{
+    color:red;
+}
